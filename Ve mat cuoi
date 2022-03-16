@@ -1,0 +1,85 @@
+from turtle import Turtle
+import turtle
+pen = Turtle()
+
+
+turtle.pensize(3)
+#pen.shape("circle")
+
+
+facesize = 200
+
+nosesize = 20
+
+#draw the face
+
+    
+pen.penup()
+pen.goto(0, -200)
+pen.pendown()
+
+pen.fillcolor("#f5ee12")
+pen.begin_fill()
+
+pen.circle(facesize)
+pen.end_fill()
+
+
+# draw the right eye
+pen.penup()
+pen.goto(150,45)
+pen.pendown()
+pen.pensize(5)
+
+pen.left(90)
+pen.circle(50, 180)
+pen.penup()
+pen.goto(150,45)
+pen.pendown()
+pen.left(100)
+pen.forward(10)
+pen.right(100)
+
+
+
+# draw the left eye
+pen.penup()
+pen.goto(-50,45)
+pen.pendown()
+pen.right(180)
+pen.circle(50, 180)
+pen.right(100)
+pen.forward(10)
+pen.left(100)
+
+#draw the nose
+
+#pen.size(3)
+
+pen.penup()
+pen.goto(0,0)
+pen.pendown()
+
+
+pen.fillcolor("#576dec")
+pen.begin_fill()
+
+pen.left(90)
+pen.circle(-nosesize, steps = 3)
+pen.end_fill()
+
+#draw the smile
+pen.penup()
+pen.goto(-100,-70)
+pen.pendown()
+
+pen.fillcolor("#e84113")
+pen.begin_fill()
+pen.right(90)
+pen.circle(100, 180)
+pen.left(90)
+pen.forward(200)
+pen.end_fill()
+
+
+turtle.done()
