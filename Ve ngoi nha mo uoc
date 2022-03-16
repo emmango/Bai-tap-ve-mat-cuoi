@@ -1,0 +1,153 @@
+from turtle import Turtle
+import turtle
+pen = Turtle()
+
+pen.speed(9)
+
+turtle.bgcolor('#F8E6E0')
+
+# ve ong mat troi
+
+pen.penup()
+pen.goto(-200, 180)
+pen.pendown()
+
+pen.fillcolor("#DF0101")
+pen.begin_fill()
+
+pen.circle(50)
+pen.end_fill()
+
+
+# ve than ngoi nha
+
+pen.penup()
+pen.goto(100,100)
+pen.pendown()
+
+pen.fillcolor("#A4A4A4")
+pen.begin_fill()
+
+pen.forward(150)
+pen.right(90)
+pen.forward(100)
+pen.right(90)
+pen.forward(150)
+pen.right(90)
+pen.forward(100)
+
+
+# ve cua so
+
+pen.penup()
+pen.goto(120,40)
+pen.pendown()
+
+pen.fillcolor("#F3F781")
+pen.begin_fill()
+
+
+pen.forward(40)
+pen.right(90)
+pen.forward(40)
+pen.right(90)
+pen.forward(40)
+pen.right(90)
+pen.forward(40)
+pen.right(90)
+pen.forward(40)
+
+pen.end_fill()
+
+#ve cua chinh
+
+pen.penup()
+pen.goto(180,0)
+pen.pendown()
+
+pen.fillcolor("#F5A9F2")
+pen.begin_fill()
+
+pen.forward(80)
+pen.right(90)
+pen.forward(40)
+pen.right(90)
+pen.forward(80)
+
+pen.end_fill()
+
+
+#ve mai nha
+
+pen.penup()
+pen.goto(175,250)
+pen.pendown()
+
+pen.fillcolor("#8A2908")
+pen.begin_fill()
+
+pen.right(90)
+pen.circle(100, steps = 3)
+pen.end_fill()
+
+# ve cay thong
+
+pen.penup()
+pen.goto(-175,50)
+pen.pendown()
+
+pen.pencolor("#21610B")
+             
+pen.fillcolor("#21610B")
+pen.begin_fill()
+
+
+pen.circle(50, steps = 3)
+pen.end_fill()
+
+pen.penup()
+pen.goto(-175,10)
+pen.pendown()
+
+pen.fillcolor("#21610B")
+pen.begin_fill()
+
+
+pen.circle(50, steps = 3)
+pen.end_fill()
+
+pen.penup()
+pen.goto(-175,-20)
+pen.pendown()
+
+pen.fillcolor("#21610B")
+pen.begin_fill()
+
+
+pen.circle(50, steps = 3)
+pen.end_fill()
+
+# ve than cay
+pen.penup()
+pen.goto(-154,-95)
+pen.pendown()
+
+pen.pencolor("#886A08")
+
+pen.fillcolor("#886A08")
+pen.begin_fill()
+
+pen.left(90)
+
+pen.forward(100)
+pen.right(90)
+pen.forward(40)
+pen.right(90)
+pen.forward(100)
+pen.right(90)
+pen.forward(40)
+
+pen.end_fill()
+
+
+turtle.done()
